@@ -166,9 +166,9 @@ with tab1 :
   
 
   if predict_btn:
-    user_input = [[
+    user_input = scaler.transform([[
           age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak
-      ]]
+      ]])
     prediction = model.predict(user_input)[0]
     # prediction = knn_model.predict(user_input)[0]
     
