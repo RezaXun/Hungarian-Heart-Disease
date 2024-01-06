@@ -166,9 +166,9 @@ with tab1 :
   
 
   if predict_btn:
-    user_input = [[
+    user_input = [
           age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak
-      ]]
+      ]
     user_input = np.reshape(user_input,(1,-1))
     user_input = scaler.fit_transform(user_input)
     prediction = model.predict(user_input)[0]
