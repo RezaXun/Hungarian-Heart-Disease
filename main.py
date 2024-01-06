@@ -170,7 +170,7 @@ with tab1 :
           age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak
       ]]
     user_input = np.reshape(user_input,(1,-1))
-    user_input = scaler.transform(user_input)
+    user_input = scaler.fit_transform(user_input)
     prediction = model.predict(user_input)[0]
     # prediction = knn_model.predict(user_input)[0]
     
